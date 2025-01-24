@@ -1,9 +1,22 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
-        {{settings.name}}
-        2020. Made with ❤ by
+<footer
+  class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4"
+>
+  <small class="text-gray-500"
+    ><a class="underline underline-offset-2" href="mailto:eric@glownote.co"
+      >Email me</a
+    >
+    <!-- 2020. Made with ❤ by
         <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
-        •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
-    </small>
+        • -->
+    <span class="px-2">|</span>
+    <!-- <p> -->
+    Try
+    <a
+      href="https://www.glownote.co"
+      class="underline"
+      target="_blank"
+      rel="noopener"
+      >Glownote</a
+    >!
+  </small>
 </footer>

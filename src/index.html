@@ -1,10 +1,65 @@
 ---
 layout: default
-title: Neat Starter
+title: Hi, I'm Eric.
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+<div
+  class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
+>
+  <h1>{{title}}</h1>
+
+  <p class="mt-2">I'm a software engineer and entrepreneur.</p>
+  <p class="mt-2">
+    I write about my journey bootstrapping
+    <a
+      class="font-semibold hover:underline focus:underline underline-offset-2"
+      href="https://www.glownote.co/"
+      >Glownote</a
+    >, engineering, and skincare.
+  </p>
+  <p class="mt-8">
+  <h2>Check out my recent articles below.</h2>
+
+  </p>
+  <div class="container max-w-3xl mt-6 px-6">
+    <section class="mt-15">
+      {% set postslist = collections.post %} {% for post in postslist | reverse
+      %}
+      <article class="my-8">
+        <h2 class="font-bold text-3xl text-gray-900 mb-2">
+          <a href="{{ post.url | url }}">
+            {% if post.data.title %} {{ post.data.title }} {% else %} Untitled
+            {% endif %}
+          </a>
+        </h2>
+        <p class="text-base leading-6 text-gray-500 mb-3">
+          <time>
+            {{ post.date | readableDate }}
+            <!-- by
+            <a>{{ post.data.author }}</a> -->
+          </time>
+        </p>
+        {% if post.data.description %}
+        <p class="text-lg text-gray-500 mb-3">{{ post.data.description }}</p>
+        {% endif %}
+
+        <p>
+          <a
+            href="{{ post.url | url }}"
+            class="text-violet-500 font-bold text-lg"
+          >
+            Read more →
+          </a>
+        </p>
+      </article>
+      {% endfor %}
+    </section>
+    <!-- {% include "./_includes/partials/content.html" %} -->
+  </div>
+  </div>
+
+  <!-- <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
   <h1>
     Welcome to
     <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
@@ -19,4 +74,5 @@ path: home
   </p>
 
   {% include "./_includes/partials/content.html" %}
+</div> -->
 </div>

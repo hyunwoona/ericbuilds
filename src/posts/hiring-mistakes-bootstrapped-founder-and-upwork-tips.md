@@ -5,13 +5,11 @@ date: 2025-01-15
 author: Eric N.
 tags:
   - hiring
-	- startups
-	- bootstrapped
-	- freelancing
-	- upwork
+  - startups
+  - bootstrapped
+  - freelancing
+  - upwork
 ---
-
-# 5 Hiring Mistakes as a Bootstrapped Founder (and Tips on Hiring on Upwork)
 
 As a bootstrapped founder, every decision you make impacts your business—especially when it comes to hiring. I've made my share of mistakes, and they were costly. In this article, I want to share what I've learned so you can avoid the same missteps, particularly when hiring through platforms like Upwork.
 
