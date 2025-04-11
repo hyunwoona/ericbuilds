@@ -9,19 +9,20 @@ path: home
 >
   <h1>{{title}}</h1>
 
-  <p class="mt-2">I'm a software engineer and entrepreneur.</p>
+  <p class="mt-2">I'm a software engineer and solo entrepreneur.</p>
   <p class="mt-2">
-    I write about my journey bootstrapping
+    I plan to write about my journey bootstrapping
     <a
-      class="font-semibold hover:underline focus:underline underline-offset-2"
+      class="font-semibold text-indigo-500 hover:text-indigo-600 focus:text-indigo-600 hover:underline focus:underline underline-offset-2"
       href="https://www.glownote.co/"
       >Glownote</a
-    >, engineering, and skincare.
+    > and other essays. Stay tuned! If you'd like to chat about anything, please feel free to <a
+      class="font-semibold text-indigo-500 hover:text-indigo-600 focus:text-indigo-600 hover:underline focus:underline underline-offset-2"
+      href="https://calendly.com/eric-na"
+      >book a call with me</a
+    >.
   </p>
-  <p class="mt-8">
-  <h2>Check out my recent articles below.</h2>
 
-  </p>
   <div class="container max-w-3xl mt-6 px-6">
     <section class="mt-15">
       {% set postslist = collections.post %} {% for post in postslist | reverse
